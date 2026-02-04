@@ -1,0 +1,20 @@
+deployment.apps/guestbook with revision #24
+Pod Template:
+  Labels:	app=guestbook
+	pod-template-hash=5f77b6c6c8
+  Annotations:	kubectl.kubernetes.io/restartedAt: 2026-02-03T09:50:11-06:00
+  Containers:
+   guestbook:
+    Image:	us.icr.io/<your sn labs namespace>/guestbook:v1
+    Port:	3000/TCP (http)
+    Host Port:	0/TCP (http)
+    Limits:
+      cpu:	5m
+    Requests:
+      cpu:	2m
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+  Node-Selectors:	<none>
+  Tolerations:	<none>
+

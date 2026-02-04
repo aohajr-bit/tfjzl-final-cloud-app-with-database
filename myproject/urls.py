@@ -20,5 +20,6 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('onlinecourse/', include('onlinecourse.urls')),
+    # Serve onlinecourse app at site root
+    path('', include('onlinecourse.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
